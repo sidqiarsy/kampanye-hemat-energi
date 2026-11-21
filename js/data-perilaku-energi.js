@@ -471,4 +471,3 @@ const DATA_ENERGI = {
     }
   ]
 };
-

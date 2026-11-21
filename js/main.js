@@ -726,6 +726,119 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ----------------------------------------------------
+  // 9B. FITUR LANJUTAN FASE 3: ZONA FILTER, SIMULATOR, MITOS VS FAKTA
+  // ----------------------------------------------------
+  
+  // 1. Zona Filter Switcher
+  const aksiTabBtns = document.querySelectorAll('.aksi-tab-btn');
+  const aksiCards = document.querySelectorAll('.rekomendasi-card-modern, .rekomendasi-card');
+
+  aksiTabBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      aksiTabBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      const targetZona = this.dataset.zona;
+
+      aksiCards.forEach(card => {
+        if (targetZona === 'all' || card.dataset.zona === targetZona) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // 2. Simulator Kalkulator Hemat Listrik Kelas & Lab (ESD Simulator)
+  const sliderPc = document.getElementById('sliderPc');
+  const sliderAc = document.getElementById('sliderAc');
+  const sliderLampu = document.getElementById('sliderLampu');
+  const valPc = document.getElementById('valPc');
+  const valAc = document.getElementById('valAc');
+  const valLampu = document.getElementById('valLampu');
+  const outKwh = document.getElementById('calcOutputKwh');
+  const outRupiah = document.getElementById('calcOutputRupiah');
+  const outCo2 = document.getElementById('calcOutputCo2');
+  const outImpact = document.getElementById('calcOutputImpact');
+
+  function updateSimulator() {
+    if (!sliderPc || !sliderAc || !sliderLampu) return;
+    const countPc = parseInt(sliderPc.value, 10);
+    const hoursAc = parseInt(sliderAc.value, 10);
+    const countLampu = parseInt(sliderLampu.value, 10);
+
+    if (valPc) valPc.textContent = `${countPc} Unit PC`;
+    if (valAc) valAc.textContent = `${hoursAc} Jam/Hari`;
+    if (valLampu) valLampu.textContent = `${countLampu} Titik`;
+
+    // 22 Hari Sekolah Efektif per Bulan
+    // Daya PC monitor standby: 0.05 kW x 1.5 jam jeda istirahat
+    const kwhPc = countPc * 0.05 * 1.5 * 22;
+    // Efisiensi AC 24C vs 16C: hemat 0.28 kW per jam
+    const kwhAc = hoursAc * 0.28 * 22;
+    // Lampu & proyektor ruang kosong: 0.04 kW x 1.5 jam
+    const kwhLampu = countLampu * 0.04 * 1.5 * 22;
+
+    const totalKwh = Math.round(kwhPc + kwhAc + kwhLampu);
+    const totalRupiah = Math.round(totalKwh * 1444);
+    const totalCo2 = Math.round(totalKwh * 0.79);
+    const pohonEq = Math.max(1, Math.round(totalCo2 / 18));
+
+    if (outKwh) outKwh.textContent = `${totalKwh.toLocaleString('id-ID')} kWh`;
+    if (outRupiah) outRupiah.textContent = `Rp ${totalRupiah.toLocaleString('id-ID')}`;
+    if (outCo2) outCo2.textContent = `${totalCo2.toLocaleString('id-ID')} kg CO₂`;
+    if (outImpact) {
+      outImpact.textContent = `🌱 Dampak Nyata: Setara dengan menyerap emisi karbon ${pohonEq} bibit pohon selama 1 tahun penuh!`;
+    }
+  }
+
+  [sliderPc, sliderAc, sliderLampu].forEach(input => {
+    if (input) {
+      input.addEventListener('input', updateSimulator);
+    }
+  });
+  updateSimulator();
+
+  // 3. Mitos vs Fakta Reveal Button
+  document.querySelectorAll('.myth-reveal-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const parent = this.closest('.myth-card');
+      if (!parent) return;
+      const answer = parent.querySelector('.myth-answer');
+      if (!answer) return;
+      const isVisible = answer.style.display === 'block';
+      answer.style.display = isVisible ? 'none' : 'block';
+      this.textContent = isVisible ? 'Cek Fakta Ilmiah 🔍' : 'Sembunyikan Penjelasan ▴';
+    });
+  });
+
+  // 4. Salin Ikrar Komitmen ke Clipboard
+  const btnCopyPledge = document.getElementById('btnCopyPledge');
+  if (btnCopyPledge) {
+    btnCopyPledge.addEventListener('click', () => {
+      const name = certName ? certName.textContent : '';
+      const rombel = certRombel ? certRombel.textContent : '';
+      const action = certAction ? certAction.textContent : '';
+      if (!name) return;
+
+      const textToCopy = `[IKRAR SISWA HEMAT ENERGI VOLTIA]\nNama: ${name}\nRombel: ${rombel}\nKomitmen: ${action}\nMari wujudkan sekolah hijau dan hemat energi bersama SMK Wikrama Bogor!`;
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const originalText = btnCopyPledge.textContent;
+        btnCopyPledge.textContent = 'Tersalin ke Clipboard! ✓';
+        btnCopyPledge.style.background = '#15370D';
+        btnCopyPledge.style.color = '#FFF2B4';
+        setTimeout(() => {
+          btnCopyPledge.textContent = originalText;
+          btnCopyPledge.style.background = '';
+          btnCopyPledge.style.color = '';
+        }, 2000);
+      }).catch(err => {
+        alert('Teks komitmen siap dibagikan!');
+      });
+    });
+  }
+
+  // ----------------------------------------------------
   // 10. JALANKAN APLIKASI
   // ----------------------------------------------------
   muatDataKuesioner();

@@ -656,36 +656,489 @@
 
 
     <!-- ========================================================
-         PAGE 3: AKSI & REKOMENDASI (FASE 3 - KOSONG / BELUM TERSEDIA)
+         PAGE 3: AKSI & REKOMENDASI (FASE 3 - IMPLEMENTASI LENGKAP)
          ======================================================== -->
     <section id="aksi" class="page">
-      <div class="stipple-section" style="padding-top: 60px; padding-bottom: 80px;">
-        <div class="container" style="max-width: 720px;">
+      <div class="stipple-section" style="padding-top: 40px; padding-bottom: 80px;">
+        <div class="container">
           
-          <div class="mac-window" style="text-align: center;">
+          <!-- Page Header Window -->
+          <div class="mac-window" style="margin-bottom: 30px;">
             <div class="mac-window-bar">
               <div class="mac-window-dots">
                 <span class="dot-fill"></span>
                 <span></span>
                 <span></span>
               </div>
-              <div class="mac-window-title">fase-03-aksi-dan-rekomendasi.sys</div>
-              <div class="mac-window-controls">[ SEGERA HADIR ]</div>
+              <div class="mac-window-title">fase-03-aksi-dan-rekomendasi.app</div>
+              <div class="mac-window-controls">[ REKOMENDASI BERBASIS DATA ]</div>
             </div>
-            <div class="mac-window-body" style="padding: 50px 30px;">
-              <span class="meta-pill highlight" style="margin-bottom: 16px; font-size: 0.88rem;">Belum Tersedia</span>
-              <h1 style="font-size: 3.2rem; margin: 14px 0 10px; color: var(--c-forest); font-weight: 900;">Fase 3</h1>
-              <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 480px; margin: 0 auto 28px;">
-                Halaman ini akan diisi rekomendasi dan langkah aksi hemat energi.
-              </p>
-              <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
-                <a href="#home" class="btn-retro btn-gold nav-link" data-page="home">
-                  <span>← Kembali ke Beranda</span>
-                </a>
-                <a href="#data" class="btn-retro btn-primary nav-link" data-page="data">
-                  <span>Lihat Data & Fakta</span>
-                </a>
+            <div class="mac-window-body">
+              <div class="section-headline">
+                <span class="section-label">FASE 3 • PANDUAN AKSI NYATA</span>
+                <h1 class="section-title">Langkah Konkret Hemat Energi Berbasis Temuan Data</h1>
+                <p class="section-desc">
+                  Rekomendasi ini disusun secara objektif berdasarkan hasil analisis survei 636 siswa kelas XI SMK Wikrama Bogor. 
+                  Bukan sekadar slogan umum, melainkan panduan taktis yang menjawab langsung titik rawan pemborosan di sekolah dan rumah.
+                </p>
               </div>
+
+              <!-- Jembatan Data ke Aksi: 3 Sorotan Kunci -->
+              <div class="window-cards-grid three-col" style="margin-top: 20px;">
+                
+                <div class="mac-window" style="margin-bottom: 0;">
+                  <div class="mac-window-bar">
+                    <div class="mac-window-dots"><span></span><span></span></div>
+                    <div class="mac-window-title">modal-utama.txt</div>
+                  </div>
+                  <div class="mac-window-body" style="padding: 16px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                      <span class="font-mono" style="font-size:0.75rem; font-weight:800; color:var(--c-forest);">MODAL UTAMA</span>
+                      <span class="meta-pill" style="font-size:0.72rem;">NILAI: 3.51</span>
+                    </div>
+                    <h4 style="font-size:1.05rem; margin-bottom:6px; color:var(--c-forest);">Disiplin Saklar & Charger</h4>
+                    <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.45;">
+                      Siswa sudah sangat disiplin mematikan saklar fisik (3.51) dan mencabut colokan charger (3.45). Kebiasaan ini adalah modal awal yang luar biasa.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mac-window" style="margin-bottom: 0;">
+                  <div class="mac-window-bar">
+                    <div class="mac-window-dots"><span></span><span></span></div>
+                    <div class="mac-window-title">titik-rawan.txt</div>
+                  </div>
+                  <div class="mac-window-body" style="padding: 16px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                      <span class="font-mono" style="font-size:0.75rem; font-weight:800; color:var(--c-forest);">FOKUS PERBAIKAN</span>
+                      <span class="meta-pill highlight" style="font-size:0.72rem;">P04: 3.22</span>
+                    </div>
+                    <h4 style="font-size:1.05rem; margin-bottom:6px; color:var(--c-forest);">Standby Layar Komputer Lab</h4>
+                    <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.45;">
+                      Sebanyak 13.7% siswa jarang membatasi layar aktif. Terlihat jelas di jurusan teknologi (PPLG rata-rata 3.32), monitor lab sering ditinggal menyala saat jeda.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mac-window" style="margin-bottom: 0;">
+                  <div class="mac-window-bar">
+                    <div class="mac-window-dots"><span></span><span></span></div>
+                    <div class="mac-window-title">faktor-sosial.txt</div>
+                  </div>
+                  <div class="mac-window-body" style="padding: 16px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                      <span class="font-mono" style="font-size:0.75rem; font-weight:800; color:var(--c-forest);">TANTANGAN SOSIAL</span>
+                      <span class="meta-pill highlight" style="font-size:0.72rem;">P09: 3.22</span>
+                    </div>
+                    <h4 style="font-size:1.05rem; margin-bottom:6px; color:var(--c-forest);">Rasa Canggung Mengingatkan</h4>
+                    <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.45;">
+                      13.2% siswa merasa segan atau canggung menegur teman yang lupa mematikan saklar kipas/AC. Perlu budaya saling mengingatkan tanpa menghakimi.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- BAGIAN 1: 5 REKOMENDASI UTAMA BERBASIS DATA (GAYA BARU LEBIH MUDAH DIBACA & DIPAHAMI) -->
+          <div style="margin-bottom: 40px;">
+            <div class="section-headline">
+              <span class="section-label">5 STRATEGI TEPAT SASARAN</span>
+              <h2 class="section-title" style="font-size: 1.85rem;">5 Panduan Aksi Nyata Hemat Energi di Sekolah</h2>
+              <p class="section-desc">
+                Dirancang dari hasil survei 636 siswa kelas XI agar langsung menjawab titik kebocoran listrik harian. Pilih kategori atau baca panduan lengkap di bawah:
+              </p>
+            </div>
+
+            <!-- Tab Filter Zona -->
+            <div class="aksi-tabs-wrapper">
+              <button type="button" class="aksi-tab-btn active" data-zona="all">🌐 Semua Aksi (5)</button>
+              <button type="button" class="aksi-tab-btn" data-zona="lab">🖥️ Lab Komputer & Laptop (2)</button>
+              <button type="button" class="aksi-tab-btn" data-zona="kelas">🏫 Ruang Kelas & AC (2)</button>
+              <button type="button" class="aksi-tab-btn" data-zona="komunitas">🤝 Mobilitas & Rayon (1)</button>
+            </div>
+
+            <!-- Grid Kartu Rekomendasi Modern 2-Kolom -->
+            <div class="rekomendasi-grid-new">
+              
+              <!-- Rekomendasi 1 (Lab) -->
+              <div class="rekomendasi-card-modern" data-zona="lab">
+                <div class="card-action-bar">
+                  <span class="action-badge-pill">AKSI #01 • 🖥️ LAB & LAPTOP</span>
+                  <span class="impact-badge-pill">HEMAT ~50W / PC</span>
+                </div>
+                <div class="card-action-body">
+                  <h3 class="action-main-title">1. Matikan Monitor Saat Jam Istirahat (Standby Cut)</h3>
+                  
+                  <div class="data-callout-box">
+                    <strong>📊 Temuan Kuesioner (P04: 3.22):</strong> Sebanyak 13.7% siswa jarang membatasi layar aktif. Terutama di jurusan teknologi (PPLG: 3.32), puluhan monitor lab sering ditinggal menyala kosong saat istirahat dan salat.
+                  </div>
+
+                  <div class="action-checklist-wrap">
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">1</span>
+                      <div><strong>Tombol Power Monitor:</strong> Wajib menekan tombol mati pada monitor PC lab jika meninggalkan meja lebih dari 15 menit.</div>
+                    </div>
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">2</span>
+                      <div><strong>Auto-Sleep 5 Menit:</strong> Atur batas waktu mati layar otomatis pada laptop dan PC lab maksimal 5 menit tanpa aktivitas.</div>
+                    </div>
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">3</span>
+                      <div><strong>Brightness 50%–60%:</strong> Menurunkan kecerahan layar menghemat baterai hingga 25% dan melindungi mata saat praktikum.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-action-footer">
+                  <span>💡 <strong>Fakta Sains:</strong> Layar monitor menyedot hingga 60% dari total konsumsi listrik 1 unit PC desktop!</span>
+                </div>
+              </div>
+
+              <!-- Rekomendasi 2 (Kelas & Sosial) -->
+              <div class="rekomendasi-card-modern" data-zona="kelas">
+                <div class="card-action-bar">
+                  <span class="action-badge-pill">AKSI #02 • 🗣️ KELAS & SOSIAL</span>
+                  <span class="impact-badge-pill">DUTA ENERGI KELAS</span>
+                </div>
+                <div class="card-action-body">
+                  <h3 class="action-main-title">2. Budaya Saling Ingatkan & Duta Energi Bergilir</h3>
+                  
+                  <div class="data-callout-box">
+                    <strong>📊 Temuan Kuesioner (P09: 3.22):</strong> Nilai terendah survei. Sebanyak 13.2% siswa merasa segan atau canggung menegur teman yang membiarkan kipas angin, proyektor, atau lampu menyala di ruang kosong.
+                  </div>
+
+                  <div class="action-checklist-wrap">
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">1</span>
+                      <div><strong>Duta Energi Harian:</strong> Tunjuk 1 anggota regu piket harian sebagai penanggung jawab resmi saklar saat ruangan ditinggalkan.</div>
+                    </div>
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">2</span>
+                      <div><strong>Aturan Orang Terakhir:</strong> Siswa yang terakhir keluar pintu kelas wajib menekan saklar lampu dan proyektor sampai padam.</div>
+                    </div>
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">3</span>
+                      <div><strong>Tegur Ramah & Santai:</strong> Gunakan kalimat bersahabat tanpa nada menghakimi: <em>"Yuk matikan dulu lampunya, kelas lagi kosong nih!"</em></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-action-footer">
+                  <span>💡 <strong>Kunci:</strong> Saling mengingatkan kebaikan lingkungan adalah tanda kepedulian bersama, bukan sok mengatur.</span>
+                </div>
+              </div>
+
+              <!-- Rekomendasi 3 (Kelas & AC) -->
+              <div class="rekomendasi-card-modern" data-zona="kelas">
+                <div class="card-action-bar">
+                  <span class="action-badge-pill">AKSI #03 • ❄️ RUANG AC</span>
+                  <span class="impact-badge-pill">HEMAT 35% LISTRIK AC</span>
+                </div>
+                <div class="card-action-body">
+                  <h3 class="action-main-title">3. Kunci Suhu AC 24°C–25°C & Disiplin Pintu Tertutup</h3>
+                  
+                  <div class="data-callout-box">
+                    <strong>📊 Observasi Lapangan:</strong> Menyetel remote AC langsung ke 16°C tidak mempercepat dinginnya kelas, melainkan memicu kompresor bekerja 100% tanpa henti dan memboroskan listrik hingga 35%.
+                  </div>
+
+                  <div class="action-checklist-wrap">
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">1</span>
+                      <div><strong>Kunci Suhu 24°C–25°C:</strong> Suhu ideal iklim tropis yang tetap sejuk nyaman tanpa membebani kompresor AC.</div>
+                    </div>
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">2</span>
+                      <div><strong>Pintu & Jendela Rapat:</strong> Pastikan pintu geser dan ventilasi tertutup rapat agar hawa dingin AC tidak terbuang sia-sia.</div>
+                    </div>
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">3</span>
+                      <div><strong>Manfaatkan Hawa Alami Pagi:</strong> Buka jendela lebar-lebar pukul 07.00–09.30 untuk sirkulasi udara segar sebelum AC dinyalakan.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-action-footer">
+                  <span>💡 <strong>Rumus Efisiensi:</strong> Setiap kenaikan setelan suhu 1°C pada remote AC menghemat sekitar 6% pemakaian listrik!</span>
+                </div>
+              </div>
+
+              <!-- Rekomendasi 4 (Lab & Kabel Roll) -->
+              <div class="rekomendasi-card-modern" data-zona="lab">
+                <div class="card-action-bar">
+                  <span class="action-badge-pill">AKSI #04 • 🔌 KABEL & STOPKONTAK</span>
+                  <span class="impact-badge-pill">ZERO VAMPIRE LOAD</span>
+                </div>
+                <div class="card-action-body">
+                  <h3 class="action-main-title">4. Ritual 1 Menit Matikan Saklar Kabel Roll Meja</h3>
+                  
+                  <div class="data-callout-box">
+                    <strong>📊 Temuan Kuesioner (P06: 3.45):</strong> Disiplin cabut charger sudah baik, namun kabel terminal roll meja lab sering dibiarkan aktif 24 jam nonstop dengan adaptor yang masih menancap.
+                  </div>
+
+                  <div class="action-checklist-wrap">
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">1</span>
+                      <div><strong>Ritual 1 Menit Sebelum Pulang:</strong> Matikan tombol saklar merah utama pada kabel roll meja sebelum bel pulang berbunyi.</div>
+                    </div>
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">2</span>
+                      <div><strong>Cabut Steker dari Dinding:</strong> Jangan biarkan charger menancap di stopkontak jika baterai laptop/HP sudah terisi penuh.</div>
+                    </div>
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">3</span>
+                      <div><strong>Stop Colokan Bertumpuk:</strong> Hindari menyambung kabel cabang secara berantai (daisy chain) demi keamanan dari risiko korsleting.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-action-footer">
+                  <span>💡 <strong>Waspada:</strong> Daya siluman (vampire load) tetap menyedot listrik walau perangkat laptop dalam kondisi mati!</span>
+                </div>
+              </div>
+
+              <!-- Rekomendasi 5 (Mobilitas & Rayon - Card Wide) -->
+              <div class="rekomendasi-card-modern card-wide" data-zona="komunitas">
+                <div class="card-action-bar">
+                  <span class="action-badge-pill">AKSI #05 • 🚲 MOBILITAS & RAYON</span>
+                  <span class="impact-badge-pill">BEBAS EMISI & HEMAT BBM</span>
+                </div>
+                <div class="card-action-body">
+                  <h3 class="action-main-title">5. Gerakan Berangkat Bareng (Carpooling Rayon) & Jalan Kaki</h3>
+                  
+                  <div class="data-callout-box">
+                    <strong>📊 Temuan Kuesioner (P05: 3.30):</strong> Sebanyak 13.4% responden jarang mempertimbangkan efisiensi transportasi. Menggunakan satu sepeda motor per siswa menghasilkan pemborosan BBM dan polusi karbon harian.
+                  </div>
+
+                  <div class="action-checklist-wrap" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">1</span>
+                      <div><strong>Carpooling Rayon:</strong> Manfaatkan teman satu rayon untuk berangkat bersama jika memiliki rute perjalanan yang searah.</div>
+                    </div>
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">2</span>
+                      <div><strong>Jalan Kaki (< 800 Meter):</strong> Siswa yang tinggal di kamar kos atau dekat gerbang sekolah dibiasakan jalan kaki sehat di pagi hari.</div>
+                    </div>
+                    <div class="action-checklist-item">
+                      <span class="check-num-badge">3</span>
+                      <div><strong>Angkutan Umum & Sepeda:</strong> Utamakan transportasi publik atau sepeda saat bepergian kerja kelompok atau ekstrakurikuler.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-action-footer">
+                  <span>💡 <strong>Manfaat Ganda:</strong> Berangkat bareng menghemat uang saku bensin, mengurangi kemacetan gerbang sekolah, dan menambah keakraban!</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- BAGIAN 2: TANTANGAN 7 HARI HEMAT ENERGI (INTERAKTIF) -->
+          <div class="challenge-box">
+            <div class="challenge-top">
+              <div>
+                <span class="section-label" style="margin-bottom: 6px;">TANTANGAN INTERAKTIF</span>
+                <h3 style="font-size: 1.55rem; color: var(--c-forest); margin-top: 4px;">Tantangan 7 Hari: Bangun Kebiasaan Baru!</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 4px;">
+                  Klik setiap misi harian yang berhasil kamu terapkan. Pantau progresmu hingga mencapai status <strong>Juara Energi</strong>!
+                </p>
+              </div>
+
+              <div class="progress-container">
+                <div class="progress-bar-retro">
+                  <div class="progress-fill-retro" id="challengeProgressFill"></div>
+                </div>
+                <span class="progress-text" id="challengeProgressText">0 / 7 HARI (0%) - PEMULA</span>
+              </div>
+            </div>
+
+            <!-- List 7 Misi Harian -->
+            <div class="challenge-list">
+              
+              <div class="challenge-item" data-index="0">
+                <div class="custom-checkbox"></div>
+                <span class="challenge-day-tag">HARI 1</span>
+                <span class="challenge-text">Cabut charger laptop dan ponselmu segera setelah baterai penuh, jangan biarkan steker menancap di dinding semalaman.</span>
+              </div>
+
+              <div class="challenge-item" data-index="1">
+                <div class="custom-checkbox"></div>
+                <span class="challenge-day-tag">HARI 2</span>
+                <span class="challenge-text">Turunkan kecerahan (brightness) layar monitor laptop ke 60% dan nyalakan dark mode saat praktikum di kelas/lab.</span>
+              </div>
+
+              <div class="challenge-item" data-index="2">
+                <div class="custom-checkbox"></div>
+                <span class="challenge-day-tag">HARI 3</span>
+                <span class="challenge-text">Pastikan saklar lampu dan proyektor padam total saat kelas ditinggalkan untuk salat dhuha/dzuhur atau jam istirahat.</span>
+              </div>
+
+              <div class="challenge-item" data-index="3">
+                <div class="custom-checkbox"></div>
+                <span class="challenge-day-tag">HARI 4</span>
+                <span class="challenge-text">Cek remote AC ruangan: pastikan suhu disetel pada 24°C–25°C dan tutup rapat semua pintu ruangan ber-AC.</span>
+              </div>
+
+              <div class="challenge-item" data-index="4">
+                <div class="custom-checkbox"></div>
+                <span class="challenge-day-tag">HARI 5</span>
+                <span class="challenge-text">Ingatkan setidaknya satu teman sekelas dengan ramah untuk mematikan perangkat listrik yang sedang tidak dipakai.</span>
+              </div>
+
+              <div class="challenge-item" data-index="5">
+                <div class="custom-checkbox"></div>
+                <span class="challenge-day-tag">HARI 6</span>
+                <span class="challenge-text">Gunakan transportasi hemat energi: berangkat bareng teman searah (carpooling), naik angkutan umum, atau jalan kaki jika dekat.</span>
+              </div>
+
+              <div class="challenge-item" data-index="6">
+                <div class="custom-checkbox"></div>
+                <span class="challenge-day-tag">HARI 7</span>
+                <span class="challenge-text">Lakukan inspeksi 1 menit sebelum pulang: matikan saklar utama kabel roll di mejamu dan pastikan stopkontak aman.</span>
+              </div>
+
+            </div>
+
+            <!-- Kotak Reward Muncul Ketika 100% Selesai -->
+            <div id="challengeRewardBox" style="display: none; margin-top: 24px; padding: 22px; background: var(--c-cream); border: var(--border-thick); box-shadow: var(--shadow-box-sm); text-align: center;">
+              <span style="font-size: 2.2rem; display: block; margin-bottom: 6px;">🏆</span>
+              <h4 style="font-size: 1.35rem; color: var(--c-forest); margin-bottom: 6px; font-weight: 900;">SELAMAT! KAMU RESMI MENJADI JUARA ENERGI VOLTIA!</h4>
+              <p style="color: var(--text-muted); font-size: 0.96rem; max-width: 600px; margin: 0 auto;">
+                Kamu telah membuktikan bahwa siswa SMK Wikrama mampu menjadi teladan konservasi energi nyata. Pertahankan kebiasaan hebat ini setiap hari di sekolah dan di rumah!
+              </p>
+            </div>
+          </div>
+
+
+          <!-- BAGIAN 3: DUA WIDGET INTERAKTIF (TIPS HARIAN & IKRAR KOMITMEN) -->
+          <div class="window-cards-grid" style="margin-bottom: 40px;">
+            
+            <!-- Widget 1: Generator Tips Harian -->
+            <div class="mac-window" style="margin-bottom: 0;">
+              <div class="mac-window-bar">
+                <div class="mac-window-dots">
+                  <span class="dot-fill"></span>
+                  <span></span>
+                </div>
+                <div class="mac-window-title">generator-tips-harian.sys</div>
+                <div class="mac-window-controls">[ ACAK TIPS ]</div>
+              </div>
+              <div class="mac-window-body">
+                <span class="font-mono" style="font-size: 0.78rem; font-weight: 800; color: var(--c-forest); letter-spacing: 0.05em; display: inline-block; margin-bottom: 6px;">INSPIRASI HARI INI</span>
+                <h3 style="font-size: 1.3rem; margin-bottom: 8px;">Tips Hemat Energi Harian</h3>
+                <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 18px;">
+                  Butuh ide cepat yang mudah diterapkan saat ini juga? Klik tombol di bawah untuk memuat tips praktis pilihan tim Voltia!
+                </p>
+
+                <!-- Box Display Tips -->
+                <div id="tipDisplay" class="tip-display" style="margin-bottom: 20px;">
+                  "Cabut charger laptop atau HP saat baterai sudah penuh. Charger yang tetap menancap tanpa alat ternyata tetap menyedot listrik tanpa kita sadari!"
+                </div>
+
+                <div style="text-align: center;">
+                  <button type="button" id="btnAcakTips" class="btn-retro btn-gold" style="width: 100%;">
+                    <span>Acak Tips Lainnya 💡</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Widget 2: Kartu Ikrar Komitmen Digital Siswa -->
+            <div class="mac-window" style="margin-bottom: 0;">
+              <div class="mac-window-bar">
+                <div class="mac-window-dots">
+                  <span class="dot-fill"></span>
+                  <span></span>
+                </div>
+                <div class="mac-window-title">kartu-komitmen-digital.app</div>
+                <div class="mac-window-controls">[ VERIFIKASI SISWA ]</div>
+              </div>
+              <div class="mac-window-body">
+                <span class="font-mono" style="font-size: 0.78rem; font-weight: 800; color: var(--c-forest); letter-spacing: 0.05em; display: inline-block; margin-bottom: 6px;">IKRAR BERSAMA</span>
+                <h3 style="font-size: 1.3rem; margin-bottom: 8px;">Komitmen Digital Hemat Listrik</h3>
+                <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 16px;">
+                  Tuliskan namamu, pilih rombel kelas XI, dan tentukan satu aksi nyata yang berkomitmen kamu jalankan mulai hari ini:
+                </p>
+
+                <!-- Form Input Ikrar -->
+                <div class="pledge-form" style="margin-top: 0;">
+                  <input type="text" id="pledgeName" class="retro-input" placeholder="Tuliskan nama lengkapmu...">
+                  
+                  <select id="pledgeRombel" class="retro-input">
+                    <option value="">-- Pilih Rombel Kelas XI --</option>
+                    <option value="PPLG XI-1">PPLG XI-1</option>
+                    <option value="PPLG XI-2">PPLG XI-2</option>
+                    <option value="PPLG XI-3">PPLG XI-3</option>
+                    <option value="PPLG XI-4">PPLG XI-4</option>
+                    <option value="PPLG XI-5">PPLG XI-5</option>
+                    <option value="TJKT XI-1">TJKT XI-1</option>
+                    <option value="TJKT XI-2">TJKT XI-2</option>
+                    <option value="TJKT XI-3">TJKT XI-3</option>
+                    <option value="DKV XI-1">DKV XI-1</option>
+                    <option value="DKV XI-2">DKV XI-2</option>
+                    <option value="DKV XI-3">DKV XI-3</option>
+                    <option value="PMN XI-1">PMN XI-1</option>
+                    <option value="PMN XI-2">PMN XI-2</option>
+                    <option value="HTL XI-1">HTL XI-1</option>
+                    <option value="HTL XI-2">HTL XI-2</option>
+                    <option value="KLN XI-1">KLN XI-1</option>
+                    <option value="KLN XI-2">KLN XI-2</option>
+                    <option value="MPLB XI-1">MPLB XI-1</option>
+                  </select>
+
+                  <select id="pledgeAction" class="retro-input">
+                    <option value="Selalu mematikan layar monitor lab komputer saat jam istirahat dan salat.">Mematikan layar komputer lab saat istirahat & salat</option>
+                    <option value="Segera mencabut charger laptop dan HP saat baterai sudah terisi penuh.">Mencabut charger setelah baterai penuh</option>
+                    <option value="Berani dan ramah mengingatkan teman yang lupa mematikan kipas/lampu di kelas.">Berani mengingatkan teman untuk mematikan listrik</option>
+                    <option value="Menjaga suhu remote AC kelas selalu di rentang optimal 24°C–25°C.">Menjaga suhu remote AC di 24°C–25°C</option>
+                    <option value="Memastikan saklar utama kabel roll meja kelas padam sebelum bel pulang berbunyi.">Mematikan kabel roll sebelum bel pulang berbunyi</option>
+                    <option value="Membiasakan berangkat bersama (carpooling) atau jalan kaki untuk rute dekat.">Berangkat bareng teman (carpooling) atau jalan kaki</option>
+                  </select>
+
+                  <button type="button" id="btnSubmitPledge" class="btn-retro btn-primary" style="width: 100%; margin-top: 6px;">
+                    <span>Tandatangani Ikrar Sekarang ✍️</span>
+                  </button>
+                </div>
+
+                <!-- Tampilan Hasil Sertifikat Digital -->
+                <div id="pledgeResult" class="pledge-result">
+                  <div style="border: 2px solid var(--c-forest); padding: 18px; background: #ffffff; text-align: left;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--c-forest); padding-bottom: 8px; margin-bottom: 12px;">
+                      <span class="font-mono" style="font-weight: 800; font-size: 0.78rem; color: var(--c-forest);">SERTIFIKAT KOMITMEN VOLTIA</span>
+                      <span style="background: var(--c-forest); color: var(--c-cream); font-size: 0.72rem; padding: 2px 6px; font-weight: 800; font-family: var(--font-mono);">TERVERIFIKASI</span>
+                    </div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 4px;">Dengan ini menyatakan bahwa:</p>
+                    <h3 id="certName" style="font-size: 1.35rem; color: var(--c-forest); font-weight: 900; margin-bottom: 4px;"></h3>
+                    <p id="certRombel" style="font-family: var(--font-mono); font-size: 0.88rem; font-weight: 700; color: var(--c-sage); margin-bottom: 12px;"></p>
+                    <div style="background: var(--c-cream); border-left: 3px solid var(--c-forest); padding: 10px 14px; margin-bottom: 12px;">
+                      <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 2px;">Berikrar dan berkomitmen untuk:</p>
+                      <p id="certAction" style="font-size: 0.96rem; font-weight: 800; color: var(--c-forest); line-height: 1.4;"></p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 8px; margin-top: 14px; padding-top: 10px; border-top: 1px dashed var(--c-forest);">
+                      <span id="certTimestamp" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim);"></span>
+                      <span style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 800; color: var(--c-forest);">SMK WIKRAMA BOGOR • 2026</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- Bottom Journey Banner to Profil Tim Pengembang -->
+          <div class="journey-banner">
+            <div class="journey-text">
+              <h3>Ingin Kenal Lebih Dekat dengan Pengembang Website Ini?</h3>
+              <p>Pelajari profil dan kolaborasi kelompok siswa pengembang di balik kampanye konservasi energi Voltia.</p>
+            </div>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <a href="#data" class="btn-retro btn-gold nav-link" data-page="data">
+                <span>← Lihat Kembali Data & Fakta</span>
+              </a>
+              <a href="#tim" class="btn-retro btn-primary nav-link" data-page="tim">
+                <span>Kenali Tim Pengembang →</span>
+              </a>
             </div>
           </div>
 
